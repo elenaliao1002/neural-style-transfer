@@ -136,9 +136,9 @@ The `--output_image_size` argument is optional and is used to specify the desire
 
 The `--output_image_format` argument is also optional and is used to specify the desired output image format. Acceptable options are: "jpg", "png", "jpeg", and "same". If set to "same", the output image will be saved in the same format as the content image. If not specified, the output image will, by default, be saved as "jpg".
 
-Another optional argument `--quiet`, by default is "False", can be set to "True" to suppress the debugging messages and intermediate images that are generated during the style transfer process.
+Another optional argument `--quiet`, by default is "False", and can be set to "True" to suppress the debugging messages and intermediate images that are generated during the style transfer process.
 
-In the case that your content image and style image do not belong to the same directory, you can specify the paths to the content and style images using the `--content_path` and `--style_path` arguments respectively. However, now `--output_dir` becomes a required argument to specify where to save the synthesized image. For instance:
+In the case that your content image and style image does not belong to the same directory, you can specify the paths to the content and style images using the `--content_path` and `--style_path` arguments respectively. However, now `--output_dir` becomes a required argument to specify where to save the synthesized image. For instance:
 
 ```bash
 python image_style_transfer.py
@@ -192,7 +192,7 @@ The `--output_frame_size` argument is optional and is used to specify the desire
 
 The `--fps` argument is also optional and is used to specify the desired output video frames per second. If not specified, the output video will, by default, have the same fps as the content video.
 
-Another optional argument `--quiet`, by default is "False", can be set to "True" to suppress the debugging messages during the video style transfer process.
+Another optional argument `--quiet`, by default is "False", and can be set to "True" to suppress the debugging messages during the video style transfer process.
 
 In the case that your content video and style image do not belong to the same directory, you can specify the paths to the content video and style image using the `--content_path` and `--style_path` arguments respectively. However, now `--output_dir` becomes a required argument to specify where to save the synthesized video. For instance:
 
@@ -205,7 +205,7 @@ python video_style_transfer.py
     --fps <desired_output_video_fps>
 ```
 
-Please note that content video must be in the mp4 format for the program to properly load the video and operate the subsequent style transfer process. If your content video is not in the mp4 format, it is recommended that you follow the instructions in the [FFmpeg documentation](https://ffmpeg.org/ffmpeg.html) to convert your video to the mp4 format.
+Please note that the content video must be in the mp4 format for the program to properly load the video and operate the subsequent style transfer process. If your content video is not in the mp4 format, it is recommended that you follow the instructions in the [FFmpeg documentation](https://ffmpeg.org/ffmpeg.html) to convert your video to the mp4 format.
 
 Additionally, for the sake of simplicity, `video_style_transfer.py` does not support the use of a configuration file to manipulate the hyperparameters of the style transfer process. The default values of the hyperparameters used in video style transfer is listed as follows:
 
