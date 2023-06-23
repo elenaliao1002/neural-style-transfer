@@ -1,0 +1,6 @@
+num_epochs: 6000
+learning_rate: 0.001
+alpha: 1
+beta: 0.01
+capture_content_features_from: {'conv11', 'conv21', 'conv31', 'conv41', 'conv51'}
+capture_style_features_from: {'conv11', 'conv21', 'conv31', 'conv41', 'conv51'}
